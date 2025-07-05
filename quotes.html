@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Frase del Día</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <div class="header">
+            <div class="date-circle">
+                <span id="current-day"></span>
+            </div>
+            <h1>Tu Frase del Día</h1>
+            <div class="day-selector">
+                <select id="day-select">
+                    <option value="0">Hoy</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="quote-box">
+            <div class="quote-mark">“</div>
+            <p id="daily-quote">Cargando tu frase inspiradora...</p>
+            <div class="quote-mark">”</div>
+        </div>
+
+        <div class="action-buttons">
+            <button id="share-btn" class="action-btn">
+                <i class="fas fa-share-alt"></i> Compartir
+            </button>
+            <button id="favorite-btn" class="action-btn">
+                <i class="far fa-heart"></i> Favorito
+            </button>
+            <button id="show-favorites" class="action-btn">
+                <i class="fas fa-star"></i> Ver Favoritos
+            </button>
+        </div>
+
+        <div class="wellness-tip">
+            <h3>Consejo del día para tu bienestar</h3>
+            <p id="wellness-advice"></p>
+        </div>
+
+        <div id="favorites-section" class="favorites-section">
+            <h3>Tus Frases Favoritas</h3>
+            <div id="favorites-list"></div>
+        </div>
+        
+        <a href="index.html" id="back-btn" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Volver al Menú
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
